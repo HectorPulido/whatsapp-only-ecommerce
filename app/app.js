@@ -120,7 +120,10 @@ Promise.all([fetch(productsUrl), fetch(configUrl)])
       productsRes.json(),
       configRes.ok
         ? configRes.json()
-        : { "search-categories": [], "whatsapp-number": DEFAULT_WHATSAPP_NUMBER },
+        : {
+            "search-categories": [],
+            "whatsapp-number": DEFAULT_WHATSAPP_NUMBER,
+          },
     ]);
     state.products = productsData;
     state.filteredProducts = productsData;
@@ -216,9 +219,7 @@ function addToCart(product) {
 
 function buyNow(product) {
   if (!product) return;
-  const url = buildWhatsappLink(
-    `Hola quiero comprar ${product.product_name}`,
-  );
+  const url = buildWhatsappLink(`Hola quiero comprar ${product.product_name}`);
   const whatsappWindow = window.open(url, "_blank");
   if (whatsappWindow) {
     whatsappWindow.opener = null;
@@ -637,13 +638,9 @@ function updateWhatsappUI() {
 
   if (footerNumber) footerNumber.textContent = displayNumber;
   if (footerLink)
-    footerLink.href = buildWhatsappLink(
-      "Hola, necesito ayuda con mi compra",
-    );
+    footerLink.href = buildWhatsappLink("Hola, necesito ayuda con mi compra");
   if (fab)
-    fab.href = buildWhatsappLink(
-      "Hola, quiero asesoría para mi mascota",
-    );
+    fab.href = buildWhatsappLink("Hola, quiero asesoría para mi mascota");
 }
 
 function buildCartCheckoutMessage() {
