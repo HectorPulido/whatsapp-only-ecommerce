@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wawapos shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <!--<div class="top-bar">
+                <div class="header-container top-bar-inner">
+                    <span>Envíos rápidos para tus peludos 🐾</span>
+                    <span class="badge-member">Wawapos Member</span>
+                </div>
+            </div>-->
+
+            <div class="header-container header-inner">
+                <div class="logo">
+                    <span class="logo-icon">🐶</span>
+                    <span class="logo-text">Wawapos <strong>shop</strong></span>
+                </div>
+                <form class="search-box" id="searchForm">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar productos..."
+                        name="q"
+                    />
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+                <div class="header-actions">
+                    <button class="btn-ghost" id="cartButton">
+                        🛒 <span id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <div class="header-container nav-inner">
+                    <button class="nav-link active" data-view="home">
+                        Inicio
+                    </button>
+                    <button class="nav-link" data-view="catalog">
+                        Catálogo
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page">
+            <section id="viewContainer">
+                <!-- Aquí se inyectan las vistas (home / catálogo / detalle) -->
+            </section>
+        </main>
+
+        <div id="cartOverlay" class="cart-overlay"></div>
+        <aside id="cartPanel" class="cart-panel" aria-label="Panel de carrito">
+            <div class="cart-panel-header">
+                <div>
+                    <p class="cart-panel-title">Tu carrito</p>
+                    <p class="cart-panel-subtitle">
+                        Productos listos para pagar
+                    </p>
+                </div>
+                <button
+                    id="cartClose"
+                    class="cart-close"
+                    aria-label="Cerrar carrito"
+                >
+                    ✕
+                </button>
+            </div>
+            <div id="cartEmpty" class="cart-empty">
+                <span>Tu carrito está vacío 🐾</span>
+            </div>
+            <ul id="cartItems" class="cart-items"></ul>
+            <div class="cart-panel-footer">
+                <div class="cart-total-row">
+                    <span>Total</span>
+                    <strong id="cartTotal">$0 COP</strong>
+                </div>
+                <div class="cart-footer-actions">
+                    <button id="cartCheckout" class="btn-primary">
+                        Ordenar de manera segura
+                    </button>
+                    <button id="cartClear" class="btn-secondary btn-small">
+                        Vaciar
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <footer class="main-footer">
+            <div class="footer-ribbon">
+                <span class="footer-ribbon-pill">
+                    <span class="secure-icon">🔒</span>
+                    Pago contra entrega asegurado, Pagas cuando recibes
+                </span>
+                <span class="footer-ribbon-pill"
+                    >🐾 Productos curados por pet lovers</span
+                >
+                <span class="footer-ribbon-pill"
+                    >✨ Envíos el mismo día en la ciudad</span
+                >
+                <span class="footer-ribbon-pill">✨ Atención humana real</span>
+                <span class="footer-ribbon-pill"
+                    >✨ Nutrición super premium</span
+                >
+            </div>
+
+            <div class="footer-container footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">🐶</div>
+                    <div>
+                        <p class="footer-heading">Wawapos shop</p>
+                        <p class="footer-copy">
+                            Cuidado consciente para perros y gatos. Mezclamos
+                            nutrición super premium con una experiencia cercana
+                            y divertida.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-block">
+                    <p class="footer-title">Explora</p>
+                    <a class="footer-link" href="#/">Inicio</a>
+                    <a class="footer-link" href="#/catalog">Catálogo</a>
+                    <a class="footer-link" href="#/catalog">Promo cachorros</a>
+                    <a class="footer-link" href="#/catalog"
+                        >Favoritos para gatos</a
+                    >
+                </div>
+
+                <div class="footer-block">
+                    <p class="footer-title">Soporte</p>
+                    <div class="footer-chip">
+                        <span class="chip-icon">💬</span>
+                        <a
+                            id="whatsappFooterLink"
+                            class="footer-chip-link"
+                            href="#"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            WhatsApp:
+                            <span id="whatsappNumber">+57 300 000 0000</span>
+                        </a>
+                    </div>
+                    <div class="footer-chip">
+                        <span class="chip-icon">📦</span>
+                        <span>Seguimiento de pedidos</span>
+                    </div>
+                    <div class="footer-chip">
+                        <span class="chip-icon">📄</span>
+                        <span>Política de cambios y devoluciones</span>
+                    </div>
+                </div>
+
+                <!--<div class="footer-block footer-newsletter">
+                    <p class="footer-title">Recibe tips y promos</p>
+                    <p class="footer-copy">
+                        Un par de correos al mes con ideas de cuidado, recetas y descuentos sorpresa.
+                    </p>
+                    <div class="newsletter-form">
+                        <input
+                            class="newsletter-input"
+                            type="email"
+                            placeholder="tu@email.com"
+                            aria-label="Correo para suscribirte"
+                        />
+                        <button class="newsletter-button" type="button">
+                            Unirme
+                        </button>
+                    </div>
+                    <p class="footer-small">Cero spam, solo cosas lindas.</p>
+                </div>-->
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span class="footer-mini-logo">🐾</span>
+                    <span>
+                        © <span id="year"></span> Wawapos shop · Hecho con amor
+                        para perros y gatos
+                    </span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a class="footer-social" href="#/catalog">Catálogo</a>
+                    <a class="footer-social" href="#/">Inicio</a>
+                </div>
+            </div>
+        </footer>
+
+        <a
+            id="whatsappFab"
+            class="whatsapp-fab"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            aria-label="Abrir WhatsApp de Wawapos"
+        >
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <path
+                    fill="currentColor"
+                    d="M16 3.5C9.11 3.5 3.5 9.11 3.5 16c0 2.24.6 4.42 1.74 6.34L3 29l6.93-2.22A12.42 12.42 0 0 0 16 28.5c6.89 0 12.5-5.61 12.5-12.5S22.89 3.5 16 3.5Zm6.73 17.49c-.27.76-1.57 1.44-2.22 1.54-.57.09-1.3.13-2.1-.13-.48-.15-1.1-.35-1.9-.69-3.34-1.44-5.52-4.78-5.69-5-0.17-.22-1.36-1.81-1.36-3.46 0-1.65.87-2.46 1.18-2.8.3-.33.65-.42.87-.42h.63c.2 0 .48-.08.75.57.27.67.92 2.31.99 2.48.08.16.13.36.03.58-.09.22-.13.35-.27.54-.13.16-.28.36-.4.49-.13.13-.27.27-.12.53.15.27.68 1.12 1.47 1.81 1.01.9 1.85 1.17 2.12 1.31.27.13.43.12.58-.07.15-.19.66-.77.84-1.04.17-.27.35-.22.59-.13.24.08 1.5.71 1.76.84.26.13.43.19.5.3.06.11.06.76-.21 1.52Z"
+                />
+            </svg>
+        </a>
+
+        <script src="app.js"></script>
+    </body>
+</html>

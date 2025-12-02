@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "professional-for-cats-and-kittens",
+    "product_name": "Professional for Cats and Kittens",
+    "description": "Fórmula ideal para gatos activos, gatitos y hembras en gestación o lactancia. Rica en proteínas y grasas que ayudan a mantener niveles óptimos de energía. Contiene pH equilibrado, magnesio controlado y niveles adecuados de ácidos grasos omega para la salud general.",
+    "price": "100000",
+    "image": "/image-professional-for-cats-and-kittens.png",
+    "tags": ["gatos", "gatitos", "gestación", "lactancia", "super premium"]
+  },
+  {
+    "slug": "maintenance-for-cats",
+    "product_name": "Maintenance for Cats",
+    "description": "Fórmula para gatos adultos de todas las razas con actividad normal o baja. Altamente digestible, con magnesio y pH controlado. Contiene omega para piel y pelaje saludable, y taurina para visión y salud del corazón.",
+    "price": "100000",
+    "image": "/image-maintenance-for-cats.png",
+    "tags": ["gatos", "adultos", "super premium"]
+  },
+  {
+    "slug": "puppy",
+    "product_name": "Puppy",
+    "description": "Fórmula diseñada para cachorros y hembras gestantes o lactantes. Incluye DHA para desarrollo óptimo del cerebro y visión, además de omega 3 y 6 y minerales quelados para piel, pelaje e inmunidad.",
+    "price": "100000",
+    "image": "/image-puppy.png",
+    "tags": ["perros", "cachorros", "gestación", "lactancia", "super premium"]
+  },
+  {
+    "slug": "performance",
+    "product_name": "Performance",
+    "description": "Fórmula con 18% de grasa y 28% de proteína para perros con actividad física media-alta. Ayuda a la reparación y mantenimiento muscular, con niveles equilibrados de ácidos grasos para salud óptima.",
+    "price": "100000",
+    "image": "/image-performance.png",
+    "tags": ["perros", "alta actividad", "super premium"]
+  },
+  {
+    "slug": "lite-senior-for-dogs",
+    "product_name": "Lite / Senior for Dogs",
+    "description": "Fórmula ideal para perros mayores, con sobrepeso o baja actividad. Contiene menos calorías, buen sabor y está enriquecida con glucosamina y condroitina para salud articular.",
+    "price": "100000",
+    "image": "/image-lite-senior-for-dogs.png",
+    "tags": ["perros", "senior", "sobrepeso"]
+  },
+  {
+    "slug": "lamb-meal-and-rice",
+    "product_name": "Lamb Meal & Rice",
+    "description": "Fórmula para perros moderadamente activos que prefieren cordero o tienen sensibilidad al pollo o maíz. Rica en proteínas de cordero, glucosamina y condroitina para articulaciones saludables.",
+    "price": "100000",
+    "image": "/image-lamb-meal-and-rice.png",
+    "tags": ["perros", "sensible", "cordero"]
+  },
+  {
+    "slug": "maintenance-for-dogs",
+    "product_name": "Maintenance for Dogs",
+    "description": "Fórmula para perros adultos con actividad normal o baja. Alta digestibilidad con proteína y grasa de pollo, carbohidratos y energía metabólica óptima.",
+    "price": "100000",
+    "image": "/image-maintenance-for-dogs.png",
+    "tags": ["perros", "adultos", "super premium"]
+  }
+]
